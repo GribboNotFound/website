@@ -1,0 +1,253 @@
+
+/** ANY COMMENTS (LIKE THIS ONE) WRITTEN ONLY IN CAPITALS: 
+ * 									READ, 
+ * 									MAKE THE CHANGES TO THE CODE,
+ * 									THEN DELETE. **/
+
+
+*{margin:0; padding:0;box-sizing:border-box;}
+
+html, body{
+	border-collapse:collapse;
+	-moz-border-collapse:collapse;
+	-webkit-border-collapse:collapse;
+	-o-border-collapse:collapse;
+	font-family: 'Montserrat', sans-serif;}
+	
+
+/* Text styles */
+h1{
+	font-family: 'Dancing Script', cursive; /* USES THE GOOGLE FONT */
+	font-size:90px; /* SIZE OF THE FONT */
+	color: black; /* COLOUR OF THE FONT */
+	}
+h2{
+	color:darkgrey;
+	font-size:30px;
+}
+h3{
+	font-family: 'Dancing Script', cursive;
+	font-size:40px;
+	color: black;}
+p{
+	color:darkgrey;
+	font-size:15px;
+	padding-top:10px;}
+	
+p span{color:#6f409c;} /* give the paragraph text a different colour to make it stand out */
+
+/* Link styles */
+
+a{
+	color:black;
+	text-decoration:none;}
+a:hover{
+	text-decoration:underline;}
+
+/* Button styles */
+#button{
+	height:50px;
+	width:100px;
+	background:#f0f0f0;
+	border:none;
+	border-radius:10px;
+	color:black;
+	font-size:12px;
+	padding:10px 20px;
+	float:right;
+	margin:10px;
+	cursor:pointer;}
+
+#button:hover{
+	background:darkgrey;
+	border:none;
+	color:white;}
+
+#button:focus{
+	outline:none;} /* !important Do not delete */
+
+/********************************************************************************/
+/* Navigation Bar */
+
+/* TOP NAVIGATION BAR
+ * IT HAS THE LOGO AND THE MENU IN IT */
+#nav{
+	background:white;
+	border:1px solid black;
+	width:100%;
+	height:70px;
+	padding:10px;
+	display:block;
+	position:fixed;
+	z-index:99;}
+	
+	
+/* YOU WILL NEED TO MAKE A SMALL LOGO IN PHOTOSHOP
+ * THAT IS 50px x 50px IN SIZE.
+ * THEN YOU WILL HAVE TO ADD IT TO THE LOGO BOX BELOW 
+ * MAKE SURE YOU SAVE THE LOGO AS LOGO.JPG IN THE SAME FOLDER AS THIS FILE */
+#nav .logo{
+	height:50px;
+	width:50px;
+	border:1px solid black; /* REMOVE THE BORDER - CHANGE BLACK TO TRANSPARENT */
+	display:inline-block;
+	float:left;
+	background:url(logo.jpg) center center;} /* MAKE SURE THE LOGO NAME IS THE SAME AS HERE */
+
+
+/* THIS CREATES THE GREY BACKGROUND IN THE MENU. */
+#nav .menu{
+	height:50px;
+	width:70%;
+	background:#f0f0f0;  /* REMOVE THE GREY BACKGROUND - CHANGE IT FROM #F0F0F0 TO TRANSPARENT */
+	display:inline-block;
+	float:right;
+	padding:5px 0 0 10px;}
+
+
+#nav a .menu-item{
+	height:40px;
+	font-size:16px;
+	color:black;
+	border:1px solid grey; /* THIS PUTS THE BODER AROUND THE MENU ITEMS - JUST CHANGE GREY TO TRANSPARENT */
+	display:inline-block;
+	min-width:100px;
+	text-align:center;
+	padding-top:9px;}
+
+
+#nav a:hover .menu-item{
+	background:grey;} /* THIS MAKES THE MENU ITEM GO DARK GREY WHEN THE CURSOR GOES OVER IT */
+
+/* THIS CREATES THE SEARCH BAR - IT DOESN'T WORK - IT IS JUST FOR AESTHETICS */
+#nav .search{ 
+	width:200px;
+	height:30px;
+	border:1px solid grey;
+	border-radius:10px;
+	display:inline-block;
+	float:right;
+	margin: 5px 20px 0 0;
+	background:white;
+	font-size:10px;
+	padding:7px;}
+
+/********************************************************************************/
+
+#header{
+	width:100%;
+	height:400px; /* HEIGHT OF THE HEADING BOX */
+	background:#f0f0f0; /* READ COMMENT BELOW TO CHANGE THIS TO AN IMAGE */
+	padding-top:150px; /* PUSH THE TEXT DOWN FROM THE TOP */
+	text-align:center;
+}
+
+/* PUT AN IMAGE IN THE BACKGROUND OF THE HEADER
+ * 
+ * 1. DOWNLOAD AN IMAGE FROM UNSPLASH.COM
+ * 		MAKE SURE THE IMAGE IS LANDSCAPE, NOT PORTRAIT
+ * 2. RENAME IT TO header
+ * 3. MOVE IT INTO THE SAME FOLDER AS THIS FILE
+ * 4. CHANGE THE background:#f0f0f0l; 
+ * 		TO 
+ * 				background:url(header.jpg) no-repeat center center fixed;
+ * 
+ *   */
+
+
+/********************************************************************************/
+
+#content{
+	width:1000px;
+	border:1px solid black;
+	margin:0 auto;}
+
+#content .info-block{
+	width:100%;
+	min-height:220px;
+	background:#f0f0f0;
+	padding:10px;}
+
+#content .info-block .img{
+	width:320px;
+	height:200px;
+	border:1px solid black;
+	background:white; /* YOU'LL HAVE TO ADD THE IMAGE INTO THE HTML, NOT THE CSS - THE PICTURE HAS TO BE 320 x 200 TO FIT IN THE BOX */
+	display:inline-block;
+	float:left;}
+
+#content .text{
+	width:650px;
+	height:200px;
+	background:white;
+	display:inline-block;
+	float:right;}
+
+#content .side-by-side{
+	width:280px;
+	height:auto;
+	border:1px solid black;
+	margin:40px 0 40px 35px; /* trbl */ 
+	background:white;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;}
+
+#content .side-by-side .img{
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	background:#f0f0f0; /* YOU'LL HAVE TO ADD THE IMAGE INTO THE HTML, NOT THE CSS - THE PICTURE HAS TO BE 320 x 200 TO FIT IN THE BOX */
+	display:inline-block;
+	float:left;
+	margin:10px 35px;}
+
+#footer{
+	width:100%;
+	height:500px;
+	background:#a8a8a8;
+	margin-top:40px;}
+
+#footer .four-block{
+	width:180px;
+	background:#f0f0f0;
+	display:inline-block;
+	vertical-align:top;
+	margin:60px 20px 40px 40px; /* trbl */
+	font-size:11px;}
+#footer ul li{list-style:none;} /* do not remove */
+
+#footer .contact-us{
+	width:400px;
+	height:300px;
+	border:1px solid black;
+	display:inline-block;
+	vertical-align:top;
+
+}
+#footer iframe{
+	position:relative;
+	display:inline;
+	float:right;
+}
+
+
+#footer .copyright{
+	font-size:11px;
+	color:black;
+	text-align:center;}
+
+#entry{
+	width:360px;
+	height:40px;
+	border-radius:10px;
+	margin: 10px 0 5px 20px;
+	padding-left:10px;
+}
+#message{
+	width:360px;
+	height:890px;
+	border-radius:10px;
+	margin: 10px 0 5px 20px;
+	padding-left:10px;
+}
